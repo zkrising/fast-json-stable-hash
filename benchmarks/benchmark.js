@@ -1,4 +1,4 @@
-const fjc = require("../index.js");
+const fjsh = require("../index.js");
 const fs = require("fs");
 const path = require("path");
 const benchmark = require("benchmark");
@@ -29,11 +29,11 @@ function LoadData(name) {
 const data = LoadData("small.json");
 
 suite.add("FJC Standard Hash", () => {
-    fjc.hash(data);
+    fjsh.hash(data);
 });
 
 suite.add("FJC Streaming Hash", () => {
-    fjc.streamingHash(data);
+    fjsh.streamingHash(data);
 });
 
 suite.add("fast-json-stable-stringify hash", () => {
