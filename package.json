@@ -1,0 +1,32 @@
+{
+    "name": "fast-json-stable-hash",
+    "version": "1.0.0",
+    "description": "Hash JSON data stably and fast.",
+    "main": "index.js",
+    "scripts": {
+        "pretest": "tap --coverage-report=text-lcov > coverage/lcov.info",
+        "test": "tap --100",
+        "benchmark": "node ./benchmarks/index.js"
+    },
+    "keywords": [
+        "json",
+        "stable",
+        "stringify",
+        "hash"
+    ],
+    "author": "zkldi",
+    "license": "MIT",
+    "devDependencies": {
+        "benchmark": "^2.1.4",
+        "eslint": "^7.22.0",
+        "eslint-config-prettier": "^8.1.0",
+        "eslint-plugin-prettier": "^3.3.1",
+        "fast-json-stable-stringify": "^2.1.0",
+        "fast-stable-stringify": "^1.0.0",
+        "faster-stable-stringify": "^1.0.0",
+        "json-stable-stringify": "^1.0.1",
+        "prettier": "^2.2.1",
+        "tap": "^14.11.0"
+    },
+    "dependencies": {}
+}

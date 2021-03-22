@@ -1,0 +1,9 @@
+{
+    "username": "foo",
+    "age": 1,
+    "flags": {
+        "admin": true,
+        "member": false
+    },
+    "friends": [1,2,3,4]
+}
