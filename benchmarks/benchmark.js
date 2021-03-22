@@ -28,11 +28,11 @@ function LoadData(name) {
 // small.json Data wrote by me, licensed under MIT. - ~1kb - this is more in line with what you'll typically be checksumming, probably.
 const data = LoadData("small.json");
 
-suite.add("FJC Standard Hash", () => {
+suite.add("FJSH Standard Hash", () => {
     fjsh.hash(data);
 });
 
-suite.add("FJC Streaming Hash", () => {
+suite.add("FJSH Streaming Hash", () => {
     fjsh.streamingHash(data);
 });
 
