@@ -4,7 +4,6 @@
     "description": "Hash JSON data stably and fast.",
     "main": "index.js",
     "scripts": {
-        "pretest": "tap --coverage-report=text-lcov > coverage/lcov.info",
         "test": "tap --100",
         "benchmark": "node ./benchmarks/index.js"
     },
@@ -29,5 +28,11 @@
         "prettier": "^2.2.1",
         "tap": "^14.11.0"
     },
-    "dependencies": {}
+    "dependencies": {},
+    "nyc": {
+        "reporter": [
+            "html",
+            "lcov"
+        ]
+    }
 }

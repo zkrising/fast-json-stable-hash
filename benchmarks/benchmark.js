@@ -26,7 +26,7 @@ function LoadData(name) {
 // large.json Data from https://github.com/zemirco/sf-city-lots-json - ~185MB
 // medium.json Data from https://github.com/json-iterator/test-data - ~25MB
 // small.json Data wrote by me, licensed under MIT. - ~1kb - this is more in line with what you'll typically be checksumming, probably.
-const data = LoadData("small.json");
+const data = LoadData("medium.json");
 
 suite.add("FJSH Standard Hash", () => {
     fjsh.hash(data);
