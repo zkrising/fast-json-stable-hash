@@ -1,6 +1,6 @@
 {
     "name": "fast-json-stable-hash",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "Hash JSON data stably and fast.",
     "main": "index.js",
     "scripts": {
@@ -13,7 +13,7 @@
         "stringify",
         "hash"
     ],
-    "files": ["index.js"],
+    "files": ["index.js", "index.d.ts"],
     "author": "zkldi",
     "license": "MIT",
     "devDependencies": {
@@ -28,6 +28,7 @@
         "prettier": "^2.2.1",
         "tap": "^14.11.0"
     },
+    "types": "index.d.ts",
     "dependencies": {},
     "nyc": {
         "reporter": [
