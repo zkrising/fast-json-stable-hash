@@ -43,7 +43,7 @@ function stringify(obj) {
         return `${obj}`;
     } else {
         throw new TypeError(
-            `Invalid JSON type of ${type}, value ${obj}. FJSS can only hash JSON objects.`
+            `Invalid JSON type of ${type}, value ${obj}. FJSH can only hash JSON objects.`
         );
     }
 }
@@ -108,9 +108,8 @@ function streamHash(obj, alg = "sha256", options = { defaultEncoding: "hex" }) {
         } else {
             // symbols are the only primitive to not implicitly stringify
             throw new TypeError(
-                `Invalid JSON type of ${type}, value ${
-                    type === "symbol" ? obj.toString() : obj
-                }. FJSS can only hash JSON objects.`
+                `Invalid JSON type of ${type}, value ${type === "symbol" ? obj.toString() : obj
+                }. FJSH can only hash JSON objects.`
             );
         }
     }
